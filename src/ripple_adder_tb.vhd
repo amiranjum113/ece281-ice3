@@ -49,8 +49,7 @@ begin
        w_addends <= x"FF"; w_Cin <= '1'; wait for 10 ns;
 	       assert (w_sum = x"F" and w_Cout = '1') report "bad with ones" severity failure;
        -- TODO, a few other test cases
-	
-		wait; -- wait forever
+	   wait; -- wait forever
 	end process;	
 	-----------------------------------------------------	
 	
